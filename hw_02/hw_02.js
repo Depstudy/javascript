@@ -51,15 +51,15 @@
 - если а и b отрицательные, вывести их произведение;
 - если а и b разных знаков, вывести их сумму; */
 
-let a = Number(prompt('Введите число a'));
-let b = Number(prompt('Введите число b'));
+//let a = Number(prompt('Введите число a'));
+//let b = Number(prompt('Введите число b'));
 
-if((Math.sign(a) == 1 && Math.sign(b) == -1) || (Math.sign(a) == -1 && Math.sign(b) == 1))
-	alert(a + b);
-else if(Math.sign(a, b) == 1)
-	alert(a - b);
-else if(Math.sign(a, b) == -1)
-	alert(a * b);
+//if((Math.sign(a) == 1 && Math.sign(b) == -1) || (Math.sign(a) == -1 && Math.sign(b) == 1))
+//	alert(a + b);
+//else if(Math.sign(a, b) == 1)
+//	alert(a - b);
+//else if(Math.sign(a, b) == -1)
+//	alert(a * b);
 
 /* Задание 4
 Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя
