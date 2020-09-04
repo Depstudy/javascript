@@ -67,3 +67,65 @@
 и возвращать результат.
 Обязательно использовать оператор return. */
 
+//function calculatorNumbers(a, b) {
+//	let operator = prompt('Введите знак операции, которую хотите выполнить');
+//	if(operator == '+')
+//		return a + b;
+//	else if(operator == '-')
+//		return a - b;
+//	else if(operator == '/')
+//		return a / b;
+//	else if(operator == '*')
+//		return a * b;
+//	else
+//		alert('Некорректное значение');
+//}
+
+//let a = Number(prompt('Введите число а'));
+//let b = Number(prompt('Введите число b'));
+
+//alert(calculatorNumbers(a, b));
+
+/* Задание 5
+Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+переданного значения операции (использовать switch) выполнить одну из арифметических
+операций
+(использовать функции из задания 4) и вернуть полученное значение.*/
+
+function mathOperation(arg1, arg2, operation) {
+	switch(operation) {
+		case '+':
+		case ' +':
+		case ' + ':
+		case '+ ':
+			return arg1 + arg2;
+			break;
+		case '-':
+		case ' -':
+		case ' - ':
+		case '- ':
+			return arg1 - arg2;
+			break;
+		case '/':
+		case ' /':
+		case ' / ':
+		case '/ ':
+			return arg1 / arg2;
+			break;
+		case '*':
+		case ' *':
+		case ' * ':
+		case '* ':
+			return arg1 * arg2;
+			break;
+		default:
+			alert('Некорректное значение');
+	}
+}
+
+let a = Number(prompt('Введите число а'));
+let b = Number(prompt('Введите число b'));
+let operation = prompt('Введите знак операции, которую хотите выполнить');
+
+alert(mathOperation(a, b, operation));
